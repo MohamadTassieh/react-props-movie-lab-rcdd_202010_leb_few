@@ -9,26 +9,30 @@ import five from '../assets/stars/5-stars.png'
 const imgMapper = {0: zero, 1: one, 2: two, 3: three, 4: four, 5: five}
 
 export default class CardBack extends Component {
-
-  generateRatingElement = () => {
-    // implement meeeee! See the readme for instructions
-    if (this.props.IMDBRating === null) {
-		 return <h4>No Rating Found</h4>
+  
+generateRatingElement = () => {
+		if (this.props.IMDBRating !== null) {
+			return <img src={imgMapper[this.props.IMDBRating]} alt="" />;
 		}
-    else{
-		 return <img src={imgMapper[this.props.IMDBRating]} alt="" />;
-		}
-  }
+		return <h4>No Rating Found</h4>;
+	};
 
   render() {
     return (
       <div className="card-back">
+<<<<<<< HEAD
+        <h3 className="title">{this.props.title}</h3>
+      <span />
+				{this.generateRatingElement()}
+				<span />
+        <h5 className="genres">{this.props.genres.join(', ')}</h5>
+=======
         <h3 className="title"></h3>
-        <span />
-        {<h5 className="genres"> {this.props.genres.join(', ')}</h5>
-				this.generateRatingElement()}
-        <span />
+      <span />
+				{this.generateRatingElement()}
+				<span />
         <h5 className="genres"></h5>
+>>>>>>> cdeece03470ba9b570611834f3db572888aed9b5
       </div>
     )
   }
