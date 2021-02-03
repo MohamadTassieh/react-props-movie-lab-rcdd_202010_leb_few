@@ -18,7 +18,6 @@ export default class MovieShowcase extends Component {
 		return <div id="movie-showcase">{this.generateMovieCards()}</div>;
 	}
 }
-=======
 import React, { Component } from 'react';
 import MovieCard from './card-components/MovieCard.js'
 import movieData from './data.js'
@@ -43,4 +42,3 @@ export default class MovieShowcase extends Component {
     )
   }
 }
->>>>>>> cdeece03470ba9b570611834f3db572888aed9b5
