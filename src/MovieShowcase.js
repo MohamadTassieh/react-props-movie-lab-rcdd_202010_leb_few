@@ -1,4 +1,3 @@
-<<<<<<< HEAD
 import React, { Component } from 'react';
 import MovieCard from './card-components/MovieCard.js';
 import movieData from './data.js';
