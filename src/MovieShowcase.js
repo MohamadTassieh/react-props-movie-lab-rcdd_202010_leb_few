@@ -12,7 +12,7 @@ export default class MovieShowcase extends Component {
 		      poster={data.poster}
 		    />
     )
-  
+
   }
   render() {
     return (
